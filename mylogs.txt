@@ -728,3 +728,83 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'de
 2019-05-12 15:34:57.106  INFO 21242 --- [Thread-16] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-199]
 2019-05-12 15:34:57.106  INFO 21242 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2019-05-12 15:34:57.108  INFO 21242 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-05-15 11:43:15.961  INFO 14604 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : Starting MvcDemoApplication on 4-91-01-049983kozicki with PID 14604 (C:\Users\laboratorium\IdeaProjects\mvc-demo\target\classes started by laboratorium in C:\Users\laboratorium\IdeaProjects\mvc-demo)
+2019-05-15 11:43:15.961 DEBUG 14604 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-15 11:43:15.971  INFO 14604 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : No active profile set, falling back to default profiles: default
+2019-05-15 11:43:16.131  INFO 14604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-15 11:43:16.131  INFO 14604 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-15 11:43:18.160  INFO 14604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 11:43:18.230  INFO 14604 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2019-05-15 11:43:18.810  INFO 14604 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec1be6db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-15 11:43:19.940  INFO 14604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-15 11:43:20.010  INFO 14604 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-15 11:43:20.010  INFO 14604 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-15 11:43:20.340  INFO 14604 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-15 11:43:20.340  INFO 14604 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4209 ms
+2019-05-15 11:43:20.790  INFO 14604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-15 11:43:21.090  INFO 14604 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-15 11:43:21.300  INFO 14604 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-15 11:43:21.520  INFO 14604 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-15 11:43:21.530  INFO 14604 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-15 11:43:22.190  INFO 14604 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-15 11:43:22.550  INFO 14604 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-05-15 11:43:22.830  INFO 14604 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@77441ec8'
+2019-05-15 11:43:22.830  INFO 14604 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 11:43:22.910  INFO 14604 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-15 11:43:22.920 DEBUG 14604 --- [restartedMain] com.rybickim.mvcdemo.config.Config       : company name from config: [SDA]
+2019-05-15 11:43:22.920 DEBUG 14604 --- [restartedMain] com.rybickim.mvcdemo.config.Config       : login from config: [User]
+2019-05-15 11:43:22.930 DEBUG 14604 --- [restartedMain] c.r.m.r.impl.DummyCarRepository          : DummyCarRepository(), cars: [Car{color='red', brand='Bugatti', model='TT'}, Car{color='white', brand='VW', model='Polo'}, Car{color='green', brand='Skoda', model='Scala'}]
+2019-05-15 11:43:22.930 TRACE 14604 --- [restartedMain] c.r.m.r.impl.DummyCarRepository          : readAllCars()
+2019-05-15 11:43:22.930 DEBUG 14604 --- [restartedMain] c.r.m.r.impl.DummyCarRepository          : readAllCars(), result: [Car{color='red', brand='Bugatti', model='TT'}, Car{color='white', brand='VW', model='Polo'}, Car{color='green', brand='Skoda', model='Scala'}]
+2019-05-15 11:43:23.380  INFO 14604 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-15 11:43:23.420  WARN 14604 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-15 11:43:23.750  INFO 14604 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-15 11:43:23.760  INFO 14604 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : Started MvcDemoApplication in 8.889 seconds (JVM running for 13.984)
+2019-05-15 11:45:09.427  INFO 14604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-15 11:45:09.427  INFO 14604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-15 11:45:09.487  INFO 14604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 60 ms
+2019-05-15 11:45:10.011 DEBUG 14604 --- [http-nio-8080-exec-1] c.r.m.c.impl.HomeControllerImpl          : homePage()
+2019-05-15 11:45:10.021 TRACE 14604 --- [http-nio-8080-exec-1] c.r.m.r.impl.DummyCarRepository          : readAllCars()
+2019-05-15 11:45:10.021 DEBUG 14604 --- [http-nio-8080-exec-1] c.r.m.r.impl.DummyCarRepository          : readAllCars(), result: [Car{color='red', brand='Bugatti', model='TT'}, Car{color='white', brand='VW', model='Polo'}, Car{color='green', brand='Skoda', model='Scala'}]
+2019-05-15 11:48:47.852  INFO 7036 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : Starting MvcDemoApplication on 4-91-01-049983kozicki with PID 7036 (C:\Users\laboratorium\IdeaProjects\mvc-demo\target\classes started by laboratorium in C:\Users\laboratorium\IdeaProjects\mvc-demo)
+2019-05-15 11:48:47.872 DEBUG 7036 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-15 11:48:47.872  INFO 7036 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : No active profile set, falling back to default profiles: default
+2019-05-15 11:48:48.012  INFO 7036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-05-15 11:48:48.012  INFO 7036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-05-15 11:48:49.941  INFO 7036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-15 11:48:50.001  INFO 7036 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 repository interfaces.
+2019-05-15 11:48:50.661  INFO 7036 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c10f5e35] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-15 11:48:51.681  INFO 7036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-15 11:48:51.751  INFO 7036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-15 11:48:51.751  INFO 7036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-15 11:48:52.031  INFO 7036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-15 11:48:52.031  INFO 7036 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4019 ms
+2019-05-15 11:48:52.421  INFO 7036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-15 11:48:52.681  INFO 7036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-15 11:48:52.861  INFO 7036 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-15 11:48:53.081  INFO 7036 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-15 11:48:53.081  INFO 7036 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-15 11:48:53.631  INFO 7036 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-15 11:48:54.201  INFO 7036 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-05-15 11:48:54.611  INFO 7036 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@38671d45'
+2019-05-15 11:48:54.611  INFO 7036 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-15 11:48:54.671  INFO 7036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-05-15 11:48:54.681 DEBUG 7036 --- [restartedMain] com.rybickim.mvcdemo.config.Config       : login from config: [User]
+2019-05-15 11:48:54.681 DEBUG 7036 --- [restartedMain] com.rybickim.mvcdemo.config.Config       : company name from config: [SDA]
+2019-05-15 11:48:54.681 DEBUG 7036 --- [restartedMain] c.r.m.r.impl.DummyCarRepository          : DummyCarRepository(), cars: [Car{color='red', brand='Bugatti', model='TT'}, Car{color='white', brand='VW', model='Polo'}, Car{color='green', brand='Skoda', model='Scala'}]
+2019-05-15 11:48:54.681 TRACE 7036 --- [restartedMain] c.r.m.r.impl.DummyCarRepository          : readAllCars()
+2019-05-15 11:48:54.681 DEBUG 7036 --- [restartedMain] c.r.m.r.impl.DummyCarRepository          : readAllCars(), result: [Car{color='red', brand='Bugatti', model='TT'}, Car{color='white', brand='VW', model='Polo'}, Car{color='green', brand='Skoda', model='Scala'}]
+2019-05-15 11:48:55.131  INFO 7036 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-15 11:48:55.171  WARN 7036 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-15 11:48:55.561  INFO 7036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-15 11:48:55.571  INFO 7036 --- [restartedMain] com.rybickim.mvcdemo.MvcDemoApplication  : Started MvcDemoApplication in 8.609 seconds (JVM running for 11.393)
+2019-05-15 11:49:09.207  INFO 7036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-15 11:49:09.218  INFO 7036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-15 11:49:09.246  INFO 7036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-05-15 11:49:10.489 DEBUG 7036 --- [http-nio-8080-exec-1] c.r.m.c.impl.HomeControllerImpl          : homePage()
+2019-05-15 11:49:10.496 TRACE 7036 --- [http-nio-8080-exec-1] c.r.m.r.impl.DummyCarRepository          : readAllCars()
+2019-05-15 11:49:10.496 DEBUG 7036 --- [http-nio-8080-exec-1] c.r.m.r.impl.DummyCarRepository          : readAllCars(), result: [Car{color='red', brand='Bugatti', model='TT'}, Car{color='white', brand='VW', model='Polo'}, Car{color='green', brand='Skoda', model='Scala'}]
